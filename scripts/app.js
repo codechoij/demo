@@ -1,24 +1,24 @@
-const ANNIVERSARY_DATE = new Date("2026-08-14T00:00:00+09:00");
-const START_DATE = new Date("2025-08-14T00:00:00+09:00");
-const TIMECAPSULE_OPEN_DATE = new Date("2026-08-14T12:00:00+09:00");
-const TIMECAPSULE_OPEN_NOTICE_END_DATE = new Date("2026-08-15T00:00:00+09:00");
+const ANNIVERSARY_DATE = new Date("2025-12-25T00:00:00+09:00");
+const START_DATE = new Date("2025-12-25T00:00:00+09:00");
+const TIMECAPSULE_OPEN_DATE = new Date("2025-12-25T12:00:00+09:00");
+const TIMECAPSULE_OPEN_NOTICE_END_DATE = new Date("2025-12-26T00:00:00+09:00");
 const RESOURCE_URL = "./resources/Strings.resx";
 const LOVE_PAGE_MUSIC_SRC = "./assets/love-page-music.mp3";
 
 const GIFT_OPEN_TIMES = {
-  // Gift 2 (멘트 작성 영상) 선물 공개시간 지정. (14일 오후 6시)
-  gift2: "2026-08-14T18:00:00+09:00",
-  // Gift 3 (니가 좋아 영상) 선물 공개시간 지정. (15일 오후 2시)
-  gift3: "2026-08-15T14:00:00+09:00",
-  // Gift 4 (사진 모음 영상) 선물 공개시간 지정. (16일 오전 10시)
-  gift4: "2026-08-16T10:00:00+09:00",
-  // Gift 7 (메롱) 선물 공개시간 지정. (18일 오전 6시)
-  gift7: "2026-08-18T06:00:00+09:00",
-  // Gift 9 (편지 추가 공개) 선물 공개시간 지정. (17일 오후 2시)
-  gift9: "2026-08-17T14:00:00+09:00",
+  // Gift 2 (멘트 작성 영상) 선물 공개시간 지정. (25일 오후 6시)
+  gift2: "2025-12-25T18:00:00+09:00",
+  // Gift 3 (니가 좋아 영상) 선물 공개시간 지정. (26일 오후 2시)
+  gift3: "2025-12-26T14:00:00+09:00",
+  // Gift 4 (사진 모음 영상) 선물 공개시간 지정. (27일 오전 10시)
+  gift4: "2025-12-27T10:00:00+09:00",
+  // Gift 7 (메롱) 선물 공개시간 지정. (29일 오전 6시)
+  gift7: "2025-12-29T06:00:00+09:00",
+  // Gift 9 (편지 추가 공개) 선물 공개시간 지정. (28일 오후 2시)
+  gift9: "2025-12-28T14:00:00+09:00",
 };
 
-const GIFT_BOX_LUXURY_OPEN_DATE = new Date("2026-08-18T06:00:00+09:00");
+const GIFT_BOX_LUXURY_OPEN_DATE = new Date("2025-12-29T06:00:00+09:00");
 const GIFT_BOX_IMAGES = {
   basic: [
     "./assets/gift-box-blue.png",
@@ -166,26 +166,11 @@ const GIFT_PHOTO_CONFIG = {
   countdownStepMs: 1000,
 };
 
-const GUESTBOOK_CONFIG = {
-  formAction: "https://docs.google.com/forms/d/e/1FAIpQLScoA-gNf-jdBA9tcF0L5-QKDswANgDzUqh4-zgg2b_XrOIklg/formResponse",
-  nameEntry: "entry.177558218",
-  messageEntry: "entry.14006226",
-  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/1-uyBD_odTyvnTdQAwG-sU8uEcm5kYOnKybg27EhhOzU/gviz/tq?tqx=out:csv&gid=0",
-  nameColumnKey: "GuestbookNameLabel",
-  messageColumnKey: "GuestbookMessageLabel",
-  timestampColumnKey: "GuestbookTimestampColumn",
-};
-
-const GIFT_PRIZE_FORM_CONFIG = {
-  formAction: "https://docs.google.com/forms/d/e/1FAIpQLScLC30YN8SccWKBoAZf9SKa5HXPj25g8YLxm-ia0tJYAPemhg/formResponse",
-  wishEntry: "entry.483348725",
-};
-
-const GUESTBOOK_FAIL_MESSAGE =
-  "GuestbookFailMessage";
-
-const ADMIN_API_URL =
-  "https://script.google.com/macros/s/AKfycbzApYhpcMCTY20XOao4v66kjoQuPS6MYtuTEwonVX-V04C5VinQlsghtkpsou7ANcWnFA/exec";
+const DEMO_GUESTBOOK_KEY = "our-day-demo-guestbook";
+const DEMO_GIFT_WISH_KEY = "our-day-demo-gift-wish";
+const DEMO_SHARED_PASSWORD_KEY = "our-day-demo-shared-password";
+const DEMO_ADMIN_PASSWORD = "1234";
+const DEMO_DEFAULT_SHARED_PASSWORD = "1234";
 
 const ADMIN_SESSION_TOKEN_KEY = "our-day-admin-session-token";
 
@@ -258,17 +243,17 @@ const POLAROID_HEART_GAP_RATIO = 0.083;
 
 // Fallback only. 실제 편지 공개시간은 scripts/letter-config.js에서 수정합니다.
 const BUILTIN_LETTER_CONFIG = {
-  descriptionReleaseAt: "2026-08-14T12:00:00+09:00",
+  descriptionReleaseAt: "2025-12-25T12:00:00+09:00",
   pages: [
-    { bodyKey: "LetterPageOneBody", releaseAt: "2026-08-14T18:00:00+09:00" },
-    { bodyKey: "LetterPageTwoBody", releaseAt: "2026-08-15T09:00:00+09:00" },
-    { bodyKey: "LetterPageThreeBody", releaseAt: "2026-08-16T09:00:00+09:00" },
-    { bodyKey: "LetterPageFourBody", releaseAt: "2026-08-16T09:00:00+09:00" },
-    { bodyKey: "LetterPageFiveBody", releaseAt: "2026-08-17T09:00:00+09:00" },
-    { bodyKey: "LetterPageSixBody", releaseAt: "2026-08-18T09:00:00+09:00", unlockByGiftNine: true },
-    { bodyKey: "LetterPageSevenBody", releaseAt: "2026-08-18T09:00:00+09:00" },
-    { bodyKey: "LetterPageEightBody", releaseAt: "2026-08-19T09:00:00+09:00" },
-    { bodyKey: "LetterPageNineBody", releaseAt: "2026-08-20T09:00:00+09:00" },
+    { bodyKey: "LetterPageOneBody", releaseAt: "2025-12-25T18:00:00+09:00" },
+    { bodyKey: "LetterPageTwoBody", releaseAt: "2025-12-26T09:00:00+09:00" },
+    { bodyKey: "LetterPageThreeBody", releaseAt: "2025-12-27T09:00:00+09:00" },
+    { bodyKey: "LetterPageFourBody", releaseAt: "2025-12-27T09:00:00+09:00" },
+    { bodyKey: "LetterPageFiveBody", releaseAt: "2025-12-28T09:00:00+09:00" },
+    { bodyKey: "LetterPageSixBody", releaseAt: "2025-12-29T09:00:00+09:00", unlockByGiftNine: true },
+    { bodyKey: "LetterPageSevenBody", releaseAt: "2025-12-29T09:00:00+09:00" },
+    { bodyKey: "LetterPageEightBody", releaseAt: "2025-12-30T09:00:00+09:00" },
+    { bodyKey: "LetterPageNineBody", releaseAt: "2025-12-31T09:00:00+09:00" },
   ],
 };
 
@@ -350,19 +335,6 @@ function applyResourceStrings() {
   document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", t("MetaDescription"));
 }
 
-function isLocalFile() {
-  return window.location.protocol === "file:";
-}
-
-function isGuestbookConfigured() {
-  return Boolean(
-    GUESTBOOK_CONFIG.formAction &&
-      GUESTBOOK_CONFIG.nameEntry &&
-      GUESTBOOK_CONFIG.messageEntry &&
-      GUESTBOOK_CONFIG.sheetCsvUrl,
-  );
-}
-
 function readStoredValue(storage, key) {
   try {
     return storage.getItem(key);
@@ -406,32 +378,20 @@ function clearAdminSessionToken() {
 }
 
 async function requestAdminApi(action, payload = {}, options = {}) {
-  const controller = options.timeoutMs ? new AbortController() : null;
-  const timeoutId = controller
-    ? setTimeout(() => controller.abort(), options.timeoutMs)
-    : null;
+  const sharedPassword = readStoredValue(localStorage, DEMO_SHARED_PASSWORD_KEY) || DEMO_DEFAULT_SHARED_PASSWORD;
 
-  let response;
-  try {
-    response = await fetch(ADMIN_API_URL, {
-      method: "POST",
-      body: JSON.stringify({ action, ...payload }),
-      signal: controller?.signal,
-    });
-  } finally {
-    if (timeoutId) clearTimeout(timeoutId);
+  if (action === "getServerTime") return { ok: true, epochMs: Date.now() };
+  if (action === "verifyAdminPassword" && payload.password === DEMO_ADMIN_PASSWORD) {
+    return { ok: true, token: "demo-admin" };
+  }
+  if (action === "verifyPassword" && payload.password === sharedPassword) return { ok: true };
+  if (action === "changePassword" && payload.token === "demo-admin") {
+    if (payload.newPassword.length < 4) throw Object.assign(new Error(t("PasswordWeak")), { code: "WEAK_PASSWORD" });
+    writeStoredValue(localStorage, DEMO_SHARED_PASSWORD_KEY, payload.newPassword);
+    return { ok: true };
   }
 
-  const data = await response.json();
-
-  if (!response.ok || !data.ok) {
-    const message = data.message || t("AdminRequestFailed");
-    const error = new Error(message);
-    error.code = data.code;
-    throw error;
-  }
-
-  return data;
+  throw Object.assign(new Error(t("PasswordBad")), { code: "BAD_PASSWORD" });
 }
 
 async function requestJson(url, options = {}) {
@@ -2223,7 +2183,7 @@ function drawPolaroidPattern(context, frame, pattern, accentColor, regions = nul
 
 function initCalendar() {
   const days = $("[data-calendar-days]");
-  const firstDay = new Date("2026-08-01T00:00:00+09:00").getDay();
+  const firstDay = 1;
   const totalDays = 31;
 
   for (let i = 0; i < firstDay; i += 1) {
@@ -2233,9 +2193,9 @@ function initCalendar() {
 
   for (let day = 1; day <= totalDays; day += 1) {
     const cell = document.createElement("span");
-    cell.className = day === 14 ? "day special" : "day";
-    if (day === 14) {
-      cell.setAttribute("aria-label", "August 14");
+    cell.className = day === 25 ? "day special" : "day";
+    if (day === 25) {
+      cell.setAttribute("aria-label", "December 25");
       cell.innerHTML = `<span class="day-heart" aria-hidden="true"></span><span class="day-number">${day}</span>`;
     } else {
       cell.textContent = day;
@@ -2267,86 +2227,13 @@ function initMusic() {
   });
 }
 
-function parseCsv(text) {
-  const rows = [];
-  let row = [];
-  let value = "";
-  let quoted = false;
-
-  for (let index = 0; index < text.length; index += 1) {
-    const char = text[index];
-    const next = text[index + 1];
-
-    if (char === '"' && quoted && next === '"') {
-      value += '"';
-      index += 1;
-      continue;
-    }
-
-    if (char === '"') {
-      quoted = !quoted;
-      continue;
-    }
-
-    if (char === "," && !quoted) {
-      row.push(value);
-      value = "";
-      continue;
-    }
-
-    if ((char === "\n" || char === "\r") && !quoted) {
-      if (char === "\r" && next === "\n") index += 1;
-      row.push(value);
-      rows.push(row);
-      row = [];
-      value = "";
-      continue;
-    }
-
-    value += char;
+function loadGuestbookEntries() {
+  try {
+    const entries = JSON.parse(readStoredValue(localStorage, DEMO_GUESTBOOK_KEY) || "[]");
+    return Array.isArray(entries) ? entries : [];
+  } catch (error) {
+    return [];
   }
-
-  if (value || row.length) {
-    row.push(value);
-    rows.push(row);
-  }
-
-  return rows.filter((items) => items.some((item) => item.trim()));
-}
-
-function mapGuestbookRows(csvText) {
-  const rows = parseCsv(csvText);
-  if (rows.length < 2) return [];
-
-  const headers = rows[0].map((header) => header.trim());
-  const nameIndex = headers.indexOf(t(GUESTBOOK_CONFIG.nameColumnKey));
-  const messageIndex = headers.indexOf(t(GUESTBOOK_CONFIG.messageColumnKey));
-  const timestampIndex = headers.indexOf(t(GUESTBOOK_CONFIG.timestampColumnKey));
-
-  if (nameIndex === -1 || messageIndex === -1) return [];
-
-  return rows
-    .slice(1)
-    .map((row, index) => ({
-      name: row[nameIndex] || "",
-      message: row[messageIndex] || "",
-      timestamp: timestampIndex === -1 ? "" : row[timestampIndex] || "",
-      order: index,
-    }))
-    .filter((entry) => entry.name.trim() && entry.message.trim())
-    .sort((a, b) => {
-      const aTime = Date.parse(a.timestamp);
-      const bTime = Date.parse(b.timestamp);
-      if (Number.isNaN(aTime) || Number.isNaN(bTime)) return b.order - a.order;
-      return bTime - aTime;
-    });
-}
-
-async function loadGuestbookEntries() {
-  const separator = GUESTBOOK_CONFIG.sheetCsvUrl.includes("?") ? "&" : "?";
-  const response = await fetch(`${GUESTBOOK_CONFIG.sheetCsvUrl}${separator}cacheBust=${Date.now()}`);
-  if (!response.ok) throw new Error("Failed to load guestbook sheet.");
-  return mapGuestbookRows(await response.text());
 }
 
 function renderGuestbook(entries) {
@@ -2379,61 +2266,17 @@ function renderGuestbook(entries) {
   });
 }
 
-async function waitForSavedEntry(name, message) {
-  for (let attempt = 0; attempt < 6; attempt += 1) {
-    await new Promise((resolve) => setTimeout(resolve, 1600));
-    const entries = await loadGuestbookEntries();
-    const saved = entries.some((entry) => entry.name === name && entry.message === message);
-    if (saved) return entries;
+function saveGuestbookEntry(name, message) {
+  const entries = loadGuestbookEntries();
+  entries.unshift({ name, message, timestamp: new Date().toLocaleString("ko-KR") });
+  if (!writeStoredValue(localStorage, DEMO_GUESTBOOK_KEY, JSON.stringify(entries))) {
+    throw new Error("Demo guestbook storage is unavailable.");
   }
-
-  return null;
-}
-
-function submitGoogleForm(name, message) {
-  const form = document.createElement("form");
-  form.method = "POST";
-  form.action = GUESTBOOK_CONFIG.formAction;
-  form.target = "guestbook-submit-frame";
-  form.hidden = true;
-
-  const nameInput = document.createElement("input");
-  nameInput.name = GUESTBOOK_CONFIG.nameEntry;
-  nameInput.value = name;
-
-  const messageInput = document.createElement("input");
-  messageInput.name = GUESTBOOK_CONFIG.messageEntry;
-  messageInput.value = message;
-
-  form.append(nameInput, messageInput);
-  document.body.appendChild(form);
-  form.submit();
-  form.remove();
+  return entries;
 }
 
 function submitGiftPrizeForm(wish) {
-  const form = document.createElement("form");
-  form.method = "POST";
-  form.action = GIFT_PRIZE_FORM_CONFIG.formAction;
-  form.target = "gift-prize-submit-frame";
-  form.hidden = true;
-
-  const wishInput = document.createElement("input");
-  wishInput.name = GIFT_PRIZE_FORM_CONFIG.wishEntry;
-  wishInput.value = wish;
-
-  form.append(wishInput);
-  document.body.appendChild(form);
-  form.submit();
-  form.remove();
-}
-
-async function copyMessageToClipboard(message) {
-  try {
-    await navigator.clipboard.writeText(message);
-  } catch (error) {
-    // The alert still tells the user what to do if clipboard permission is unavailable.
-  }
+  return writeStoredValue(localStorage, DEMO_GIFT_WISH_KEY, wish);
 }
 
 function initGuestbook() {
@@ -2443,25 +2286,8 @@ function initGuestbook() {
   const sendButton = $("[data-guestbook-send]");
   const status = $("[data-guestbook-status]");
 
-  if (!isGuestbookConfigured()) {
-    sendButton.disabled = true;
-    status.textContent = t("GuestbookNotConfigured");
-    renderGuestbook([]);
-    return;
-  }
-
-  if (isLocalFile()) {
-    status.textContent = t("GuestbookPrompt");
-    renderGuestbook([]);
-    return;
-  }
-
   status.textContent = t("GuestbookPrompt");
-  loadGuestbookEntries()
-    .then(renderGuestbook)
-    .catch(() => {
-      status.textContent = t("GuestbookLoadFailed");
-    });
+  renderGuestbook(loadGuestbookEntries());
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -2472,17 +2298,12 @@ function initGuestbook() {
 
     sendButton.disabled = true;
     status.textContent = t("GuestbookSavingStatus");
-    submitGoogleForm(name, message);
-
     try {
-      const entries = await waitForSavedEntry(name, message);
-      if (!entries) throw new Error("Saved entry was not found.");
+      const entries = saveGuestbookEntry(name, message);
       renderGuestbook(entries);
       form.reset();
       status.textContent = t("GuestbookSavedStatus");
     } catch (error) {
-      await copyMessageToClipboard(message);
-      alert(t(GUESTBOOK_FAIL_MESSAGE));
       status.textContent = t("GuestbookSaveUnknownStatus");
     } finally {
       sendButton.disabled = false;

@@ -15,44 +15,44 @@
  * LetterPageSixBody의 unlockByGiftNine은 Gift9 보상 공개 조건입니다.
  */
 window.LETTER_CONFIG = {
-  descriptionReleaseAt: "2026-08-14T12:00:00+09:00", // 14일 오후 12시
+  descriptionReleaseAt: "2025-12-25T12:00:00+09:00", // 25일 오후 12시
   pages: [
     {
       bodyKey: "LetterPageOneBody",
-      releaseAt: "2026-08-14T18:00:00+09:00", // 14일 오후 6시
+      releaseAt: "2025-12-25T18:00:00+09:00", // 25일 오후 6시
     },
     {
       bodyKey: "LetterPageTwoBody",
-      releaseAt: "2026-08-15T09:00:00+09:00", //15일 오전 9시
+      releaseAt: "2025-12-26T09:00:00+09:00", // 26일 오전 9시
     },
     {
       bodyKey: "LetterPageThreeBody",
-      releaseAt: "2026-08-16T09:00:00+09:00", //16일 오전 9시
+      releaseAt: "2025-12-27T09:00:00+09:00", // 27일 오전 9시
     },
     {
       bodyKey: "LetterPageFourBody",
-      releaseAt: "2026-08-16T09:00:00+09:00",//16일 오전 9시
+      releaseAt: "2025-12-27T09:00:00+09:00", // 27일 오전 9시
     },
     {
       bodyKey: "LetterPageFiveBody",
-      releaseAt: "2026-08-17T09:00:00+09:00", //17일 오전 9시
+      releaseAt: "2025-12-28T09:00:00+09:00", // 28일 오전 9시
     },
     {
       bodyKey: "LetterPageSixBody",
-      releaseAt: "2026-08-18T09:00:00+09:00", //18일 오전 9시
+      releaseAt: "2025-12-29T09:00:00+09:00", // 29일 오전 9시
       unlockByGiftNine: true,
     },
     {
       bodyKey: "LetterPageSevenBody",
-      releaseAt: "2026-08-18T09:00:00+09:00", //18일 오전 9시
+      releaseAt: "2025-12-29T09:00:00+09:00", // 29일 오전 9시
     },
     {
       bodyKey: "LetterPageEightBody",
-      releaseAt: "2026-08-19T09:00:00+09:00", //19일 오전 9시
+      releaseAt: "2025-12-30T09:00:00+09:00", // 30일 오전 9시
     },
     {
       bodyKey: "LetterPageNineBody",
-      releaseAt: "2026-08-20T09:00:00+09:00", //20일 오전 9시
+      releaseAt: "2025-12-31T09:00:00+09:00", // 31일 오전 9시
     },
   ],
 };

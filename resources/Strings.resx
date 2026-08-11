@@ -33,7 +33,7 @@
   <data name="TakePhotoButton" xml:space="preserve"><value>기념사진 찍기</value></data>
   <data name="CelebrateButton" xml:space="preserve"><value>축하하기</value></data>
   <data name="KickFootAlt" xml:space="preserve"><value>발차기 이미지</value></data>
-  <data name="HomeHeroEyebrow" xml:space="preserve"><value>August 14</value></data>
+  <data name="HomeHeroEyebrow" xml:space="preserve"><value>December 25</value></data>
   <data name="HomeHeroTitle" xml:space="preserve"><value>우리의 사랑이 시작한 날</value></data>
   <data name="HomeHeroCopy" xml:space="preserve"><value>처음 만난 설렘부터 오늘의 다정함까지 이 안에 담아둘게.</value></data>
   <data name="CountdownUntil" xml:space="preserve"><value>기념일까지</value></data>
@@ -44,7 +44,7 @@
   <data name="HomeMenuGiftCopy" xml:space="preserve"><value>상자를 골라보는 선물 페이지</value></data>
   <data name="HomeMenuLetterCopy" xml:space="preserve"><value>열어보는 편지 페이지</value></data>
   <data name="HomeMenuCameraCopy" xml:space="preserve"><value>폴라로이드 기념사진</value></data>
-  <data name="HomeMenuLoveCopy" xml:space="preserve"><value>D+365와 8월 14일 달력</value></data>
+  <data name="HomeMenuLoveCopy" xml:space="preserve"><value>D+365와 12월 25일 달력</value></data>
   <data name="ProtectedEyebrow" xml:space="preserve"><value>Private</value></data>
   <data name="ProtectedTitle" xml:space="preserve"><value>본인 확인하겠습니다!
 본인이 아니라면 지금이라도 나가세요!</value></data>
@@ -226,10 +226,10 @@
   
 페이지를 벗어나 카메라가 멈춘 경우, '카메라 켜기' 버튼을 다시 눌러주세요.</value></data>
   <data name="CameraDownloadPreparingStatus" xml:space="preserve"><value>저장 파일을 준비하는 중입니다. 잠시만 기다려주세요.</value></data>
-  <data name="LoveCalendarLabel" xml:space="preserve"><value>2026년 8월 달력</value></data>
+  <data name="LoveCalendarLabel" xml:space="preserve"><value>2025년 12월 달력</value></data>
   <data name="LoveEyebrow" xml:space="preserve"><value>D+365</value></data>
   <data name="LoveDurationText" xml:space="preserve"><value>365 days with you</value></data>
-  <data name="MonthAugust" xml:space="preserve"><value>August</value></data>
+  <data name="MonthDecember" xml:space="preserve"><value>December</value></data>
   <data name="WeekdaySun" xml:space="preserve"><value>Sun</value></data>
   <data name="WeekdayMon" xml:space="preserve"><value>Mon</value></data>
   <data name="WeekdayTue" xml:space="preserve"><value>Tue</value></data>
@@ -253,7 +253,7 @@
   <data name="GuestbookTimestampColumn" xml:space="preserve"><value>타임스탬프</value></data>
   <data name="SendButton" xml:space="preserve"><value>Send</value></data>
   <data name="GuestbookEmpty" xml:space="preserve"><value>아직 남겨진 메세지가 없습니다.</value></data>
-  <data name="GuestbookNotConfigured" xml:space="preserve"><value>Google Form/Sheet 연결 후 저장과 목록 조회가 활성화됩니다.</value></data>
+  <data name="GuestbookNotConfigured" xml:space="preserve"><value>데모 방명록은 이 브라우저에만 저장됩니다.</value></data>
   <data name="GuestbookLoadFailed" xml:space="preserve"><value>방명록을 불러오지 못했습니다.</value></data>
   <data name="GuestbookSavingStatus" xml:space="preserve"><value>소중한 메세지를 저장하는 중입니다.</value></data>
   <data name="GuestbookSavedStatus" xml:space="preserve"><value>저장됐어요. 최신 메세지가 위에 표시됩니다.</value></data>
