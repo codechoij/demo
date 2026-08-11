@@ -2,7 +2,7 @@ const ANNIVERSARY_DATE = new Date("2025-12-25T00:00:00+09:00");
 const START_DATE = new Date("2025-12-25T00:00:00+09:00");
 const TIMECAPSULE_OPEN_DATE = new Date("2025-12-25T12:00:00+09:00");
 const TIMECAPSULE_OPEN_NOTICE_END_DATE = new Date("2025-12-26T00:00:00+09:00");
-const RESOURCE_URL = "./resources/Strings.resx";
+const RESOURCE_URL = "./resources/Strings.resx?v=2025-12-25";
 const LOVE_PAGE_MUSIC_SRC = "./assets/love-page-music.mp3";
 
 const GIFT_OPEN_TIMES = {

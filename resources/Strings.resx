@@ -226,7 +226,7 @@
   
 페이지를 벗어나 카메라가 멈춘 경우, '카메라 켜기' 버튼을 다시 눌러주세요.</value></data>
   <data name="CameraDownloadPreparingStatus" xml:space="preserve"><value>저장 파일을 준비하는 중입니다. 잠시만 기다려주세요.</value></data>
-  <data name="LoveCalendarLabel" xml:space="preserve"><value>2025년 12월 달력</value></data>
+  <data name="LoveCalendarLabel" xml:space="preserve"><value>2025년 12월 25일 달력</value></data>
   <data name="LoveEyebrow" xml:space="preserve"><value>D+365</value></data>
   <data name="LoveDurationText" xml:space="preserve"><value>365 days with you</value></data>
   <data name="MonthDecember" xml:space="preserve"><value>December</value></data>
