@@ -51,7 +51,7 @@
   <data name="ProtectedConfirmButton" xml:space="preserve"><value>본인확인</value></data>
   <data name="PasswordLabel" xml:space="preserve"><value>비밀번호</value></data>
   <data name="EnterButton" xml:space="preserve"><value>입장하기</value></data>
-  <data name="ProtectedPasswordPrompt" xml:space="preserve"><value>정말 본인인지 확인하겠습니다. 준이가 맞다면 비밀번호를 알고 있겠죠?</value></data>
+  <data name="ProtectedPasswordPrompt" xml:space="preserve"><value>정말 본인인지 확인하겠습니다. 본인이 맞다면 비밀번호를 알고 있겠죠?</value></data>
   <data name="TimecapsuleTitle" xml:space="preserve"><value>아직 열 수 없는 타임캡슐이에요.
 {openAt}에 공개됩니다.</value></data>
   <data name="TimecapsuleCheckingTitle" xml:space="preserve"><value>타임캡슐 공개 시간을 확인하는 중입니다.</value></data>
